@@ -23,7 +23,7 @@
 
             <form>
                 <br>
-                <input type="text" id="outputTextField" value=" " />
+                <input type="text" id="outputTextField" value=" " class="outputTextField" />
                 <br><br>
                 <button id="copyButton">Copy to Clipboard</button>
                 <br><br>
@@ -37,10 +37,10 @@
                 <button id="hostWeak" class="right_buttons">Weak Host</button>
                 <button id="firepower" class="right_buttons">Firepower Welcomed</button>
                 <button id="execute" class="right_buttons">10% Execute</button>
-                <input type="number" id="raidTimes" placeholder="Number of Runs" class="right_inputs">
-                <input type="number" id="belowRank" placeholder="Below Rank" class="right_inputs">
-                <input type="number" id="aboveRank" placeholder="Above Rank" class="right_inputs">
-                <input type="number" id="person" placeholder="Number of Person" class="right_inputs">
+                <input type="number" id="raidTimes" placeholder="Number of Runs" class="right_inputs" min="1">
+                <input type="number" id="belowRank" placeholder="Below Rank" class="right_inputs" min="1">
+                <input type="number" id="aboveRank" placeholder="Above Rank" class="right_inputs" min="1">
+                <input type="number" id="person" placeholder="Number of Person" class="right_inputs" min="1">
             </div>
         </div>
 
@@ -187,7 +187,9 @@
 
 
     </div>
-    <script src="scripts.js"></script>
+    <script src="functionalScripts.js"></script>
+    <script src="namingFunctions.js"></script>
+</body>
 </body>
 
 </html>

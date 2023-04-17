@@ -1,3 +1,18 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+input,
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #myHeader {
   position: fixed;
   top: 0;
@@ -12,7 +27,6 @@
 #pageBody {
   width: 100%; /* Set parent container to 100% width */
 }
-
 /* Dropdown Button */
 #categoryField {
   width: 95%; /* Set width to 90% of the parent container */
@@ -27,7 +41,7 @@
 }
 
 .dropbtn {
-  background-color: #4caf50;
+  background-color: gray;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -77,7 +91,6 @@
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
