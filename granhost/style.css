@@ -1,3 +1,13 @@
+#myHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightseagreen;
+  padding: 10px;
+  z-index: 999;
+}
+
 /* Set parent container to 100% width */
 #pageBody {
   width: 100%; /* Set parent container to 100% width */
@@ -174,15 +184,27 @@
   border-color: #666; /* Change border color on hover */
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Added property for gap between columns */
+}
+
 .right_buttons {
-  width: 95%;
+  width: 90%;
   padding: 5px;
   box-sizing: content-box;
   margin-bottom: 10px;
 }
 
 .right_inputs {
-  width: 95%;
+  width: 90%;
   padding: 5px;
   margin-bottom: 10px;
 }
