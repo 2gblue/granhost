@@ -18,54 +18,180 @@
     </header>
     <br>
     <div id="outputDiv">
-        <form>
-            <input type="text" id="outputTextField" />
-        </form>
+        <div id="outputFieldLeft">
+            <span>OUTPUT</span>
+
+            <form>
+                <br>
+                <input type="text" id="outputTextField" value=" " />
+                <br><br>
+                <button id="copyButton">Copy to Clipboard</button>
+                <br><br>
+                <input type="reset" value="Reset">
+
+        </div>
+        <div id="outputFieldRight">
+            <button id="host" class="right_buttons">Host</button>
+            <br>
+            <button id="hostAFK" class="right_buttons">AFK Host</button>
+            <br>
+            <button id="hostWeak" class="right_buttons">Weak Host</button>
+            <br>
+            <button id="firepower" class="right_buttons">Firepower Welcomed</button>
+            <br>
+            <button id="execute" class="right_buttons">10% Execute</button>
+            <br>
+            <input type="number" id="raidTimes" placeholder="Number of Runs" class="right_inputs">
+            <br>
+            <input type="number" id="belowRank" placeholder="Below Rank" class="right_inputs">
+            <br>
+            <input type="number" id="aboveRank" placeholder="Above Rank" class="right_inputs">
+            <br>
+            <input type="number" id="person" placeholder="Number of Person" class="right_inputs">
+            <br>
+        </div>
+
     </div>
+
     <br>
+    <div id="pageBody">
+        <div id="categoryField">
+            <div class="dropdown" id="superUltimateRaids">
+                <button onclick="myFunction('superUltimateRaids')" class="dropbtn">Super Ultimate Raids</button>
+                <div id="myDropdown-superUltimateRaids" class="dropdown-content">
+                    <a href="#">Super Ultimate Bahamut</a>
+                </div>
+            </div>
 
-    <div id="categoryField">
-        <div class="dropdown" id="superUltimateRaids">
-            <button onclick="myFunction('superUltimateRaids')" class="dropbtn">Super Ultimate Raids</button>
-            <div id="myDropdown-superUltimateRaids" class="dropdown-content">
-                <a href="#">Link 1</a>
+            <div class="dropdown" id="revansRaid">
+                <button onclick="myFunction('revansRaid')" class="dropbtn">Revans Raids</button>
+                <div id="myDropdown-revansRaid" class="dropdown-content">
+                    <a href="#">Mugen</a>
+                    <a href="#">Diaspora</a>
+                    <a href="#">Siegfried</a>
+                    <a href="#">Agastia</a>
+                    <a href="#">Seofon</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="astralRaids">
+                <button onclick="myFunction('astralRaids')" class="dropbtn">Astral Raids</button>
+                <div id="myDropdown-astralRaids" class="dropdown-content">
+                    <a href="#">Lucillius HL</a>
+                    <a href="#">Beelzebub</a>
+                    <a href="#">Belial</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="nightmareRaids">
+                <button onclick="myFunction('nightmareRaids')" class="dropbtn">Nightmare Raids</button>
+                <div id="myDropdown-nightmareRaids" class="dropdown-content">
+                    <a href="#">Proto Bahamut HL</a>
+                    <a href="#">Akasha</a>
+                    <a href="#">Grand Order</a>
+                    <a href="#">Ultimate Bahamut HL</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="sixDragonRaids">
+                <button onclick="myFunction('sixDragonRaids')" class="dropbtn">Six-Dragons Raids</button>
+                <div id="myDropdown-sixDragonRaids" class="dropdown-content">
+                    <a href="#">Wilnas</a>
+                    <a href="#">Wamdus</a>
+                    <a href="#">Galleon</a>
+                    <a href="#">Ewiyar</a>
+                    <a href="#">Lu Woh</a>
+                    <a href="#">Fediel</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="maliceRaids">
+                <button onclick="myFunction('maliceRaids')" class="dropbtn">Malice Raids</button>
+                <div id="myDropdown-maliceRaids" class="dropdown-content">
+                    <a href="#">Tiamat Malice</a>
+                    <a href="#">Leviathan Malice</a>
+                    <a href="#">Phronesis</a>
+                    <a href="#">Luminiera Malice</a>
+                    <a href="#">Anima Animus Core</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="enneadRaids">
+                <button onclick="myFunction('enneadRaids')" class="dropbtn">Ennead Raids</button>
+                <div id="myDropdown-enneadRaids" class="dropdown-content">
+                    <a href="#">Atum</a>
+                    <a href="#">Tefnut</a>
+                    <a href="#">Bennu</a>
+                    <a href="#">Ra</a>
+                    <a href="#">Horus</a>
+                    <a href="#">Osiris</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="fourStarRaids">
+                <button onclick="myFunction('fourStarRaids')" class="dropbtn">Four Star Raids</button>
+                <div id="myDropdown-fourStarRaids" class="dropdown-content">
+                    <a href="#">HL & QL</a>
+                    <a href="#">Lucillius</a>
+                    <a href="#">Four Primarchs</a>
+                    <a href="#">Lindwurm</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="stdNightmareRaids">
+                <button onclick="myFunction('stdNightmareRaids')" class="dropbtn">Standard Nightmare Raids</button>
+                <div id="myDropdown-stdNightmareRaids" class="dropdown-content">
+                    <a href="#">Ultimate Bahamut</a>
+                    <a href="#">HL</a>
+                    <a href="#">QL</a>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <div id="classField">
+            <div class="dropdown" id="row4class">
+                <button onclick="myFunction('row4class')" class="dropbtn">Row IV Class</button>
+                <div id="myDropdown-row4class" class="dropdown-content">
+                    <a href="#">Berserker</a>
+                    <a href="#">Luchador</a>
+                    <a href="#">Robin Hood</a>
+                    <a href="#">Relic Buster</a>
+                    <a href="#">Yamato</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="row5class">
+                <button onclick="myFunction('row5class')" class="dropbtn">Row V Class</button>
+                <div id="myDropdown-row5class" class="dropdown-content">
+                    <a href="#">Viking</a>
+                    <a href="#">Paladin</a>
+                    <a href="#">Iatromantis</a>
+                    <a href="#">Manadiver</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="ex2class">
+                <button onclick="myFunction('ex2class')" class="dropbtn">EX II Class</button>
+                <div id="myDropdown-ex2class" class="dropdown-content">
+                    <a href="#">Kengo</a>
+                </div>
             </div>
         </div>
-
-        <div class="dropdown" id="revansRaid">
-            <button onclick="myFunction('revansRaid')" class="dropbtn">Revans Raids</button>
-            <div id="myDropdown-revansRaid" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <a href="#">Link 4</a>
-                <a href="#">Link 5</a>
-            </div>
+        <br>
+        <div id="miscField">
+            <button class="miscButton">Fire</button>
+            <button class="miscButton">Water</button>
+            <button class="miscButton">Earth</button>
+            <button class="miscButton">Wind</button>
+            <button class="miscButton">Light</button>
+            <button class="miscButton">Dark</button>
         </div>
+        <br>
 
-        <div class="dropdown" id="AstralRaids">
-            <button onclick="myFunction('AstralRaids')" class="dropbtn">Astral Raids</button>
-            <div id="myDropdown-AstralRaids" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div id="miscField">
 
     </div>
-
-    <div id="classField">
-
-    </div>
-
-
     <script src="scripts.js"></script>
 </body>
 

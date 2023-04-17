@@ -1,24 +1,31 @@
+/* Set parent container to 100% width */
+#pageBody {
+  width: 100%; /* Set parent container to 100% width */
+}
+
 /* Dropdown Button */
 #categoryField {
-  width: 90%;
+  width: 95%; /* Set width to 90% of the parent container */
   margin: 0 auto;
-  display: flex; /* Set display to flex */
-  justify-content: space-between;
-  flex-wrap: wrap; /* Allow buttons to wrap to new line */
+  display: grid; /* Use CSS grid for 3x3 layout */
+  grid-template-columns: repeat(3, 1fr); /* Set 3 columns with equal width */
+  grid-gap: 20px; /* Add gap between buttons */
+  justify-items: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
   border: 1px red solid;
   padding: 20px;
 }
 
 .dropbtn {
-  flex: 1;
-  width: 250px; /* Set a specific width for the buttons */
   background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  width: 100%; /* Set buttons to 100% width to fill the grid cells */
 }
+
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
@@ -27,7 +34,13 @@
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  flex: 1;
+  width: 300px; /* Adjust the width as needed */
+  margin: 10px;
+  display: flex; /* Add display:flex to align dropdown content vertically */
+  justify-content: center; /* Add justify-content:center to align dropdown content horizontally */
+  align-items: center; /* Add align-items:center to vertically center the content */
+  position: relative; /* Add position:relative to enable absolute positioning of dropdown content */
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -38,6 +51,9 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  top: 100%; /* Add top:100% to position the content below the dropdown button */
+  left: 0; /* Add left:0 to align the content with the left edge of the dropdown button */
+  width: 100%; /* Add width:100% to make the content expand to the full width of the dropdown button */
 }
 
 /* Links inside the dropdown */
@@ -57,21 +73,121 @@
   display: block;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Add clear:both to ensure proper alignment of floated elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* Float buttons to left/middle/right */
-#superUltimateRaids {
-  float: left;
-}
-
-#revansRaid {
-  float: none;
-  display: inline-block;
+#miscField {
+  width: 95%; /* Set width to 95% of the parent container */
   margin: 0 auto;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  border: 1px red solid;
+  padding: 20px;
 }
 
-#AstralRaids {
-  float: right;
+.miscButton {
+  flex-grow: 1; /* Allow buttons to grow and share same width */
+  margin: 0 10px; /* Add margin between buttons */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Set buttons to 100% width to fill the grid cells */
+  padding: 16px;
+  color: white;
+}
+
+.miscButton:nth-child(1) {
+  background-color: #d91818; /* fire */
+}
+
+.miscButton:nth-child(2) {
+  background-color: #1852d9; /* water */
+}
+
+.miscButton:nth-child(3) {
+  background-color: #d98518; /* earth */
+}
+
+.miscButton:nth-child(4) {
+  background-color: #5fd918; /* wind */
+}
+
+.miscButton:nth-child(5) {
+  background-color: #f5f125; /* light */
+}
+
+.miscButton:nth-child(6) {
+  background-color: #ac18d9; /* purple */
+}
+
+#classField {
+  width: 95%; /* Set width to 95% of the parent container */
+  margin: 0 auto;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  border: 1px red solid;
+  padding: 20px;
+}
+
+#outputDiv {
+  width: 95%; /* Set width to 95% of the parent container */
+  margin: 0 auto;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: 1px red solid;
+  padding: 20px;
+}
+
+#outputFieldLeft {
+  width: 40%; /* Set width to 40% of the parent container */
+  margin-right: 20px; /* Add margin to the right for spacing */
+  display: inline-block; /* Use inline-block to align with float element */
+  border: 1px red solid;
+  padding: 20px;
+}
+
+#outputFieldRight {
+  float: right; /* Float the div to the right */
+  width: 40%; /* Set width to 40% of the parent container */
+  border: 1px red solid;
+  padding: 20px;
+}
+
+#outputTextField {
+  padding: 10px; /* Add padding to the text field */
+  font-size: 16px; /* Set font size */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  outline: none; /* Remove default outline */
+  box-shadow: none; /* Remove default box shadow */
+  width: 200px; /* Set width */
+}
+
+#outputTextField:hover {
+  border-color: #666; /* Change border color on hover */
+}
+
+.right_buttons {
+  width: 95%;
+  padding: 5px;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+
+.right_inputs {
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#outputTextField {
+  width: 95%;
+  box-sizing: content-box;
 }
