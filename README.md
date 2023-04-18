@@ -20,4 +20,4 @@ Suggested formats for naming room :
 
 ## Examples
 
-(スパバハ)(300 ↑)(主土)(@10 光光水火) = (Super Baha)(300 Rank Above) (Host Earth) (Looking for execute/10%, Light, Light, Water, Fire)
+(スパバハ)(300 ↑)(主土)(@10 光光水火) = (Super Baha)(Rank 300 Above) (Host Earth) (Looking for execute/10%, Light, Light, Water, Fire)
