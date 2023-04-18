@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +14,25 @@
 
     <header id="myHeader">
         <div>
-            Granblue Fantasy - Co-Op Hosting
+            <span id="pageTitle">Granblue Fantasy - Co-Op Room Name Generator</span>
         </div>
+
+
+
     </header>
     <br>
     <div id="outputDiv">
         <div id="outputFieldLeft">
-            <span>OUTPUT</span>
+            <span id="outputTitle">OUTPUT</span>
 
             <form>
                 <br>
                 <input type="text" id="outputTextField" value=" " class="outputTextField" />
                 <br><br>
-                <button id="copyButton">Copy to Clipboard</button>
-                <br><br>
-                <input type="reset" value="Reset">
+                <input type="reset" id="resetButton" value="Clear" class="custom-button">
+                <button id="copyButton" class="custom-button"><span>Copy to Clipboard</span></button>
+
+
 
         </div>
         <div id="outputFieldRight">
@@ -396,13 +401,25 @@
     </div>
     <div>
         <footer id="myFooter">
-            <span>Made by : 2gblue</span>
+            <div id="footerContent">
 
+                <div id="footerText">
+                    <span>Images/icons used on this website are not made by me and are the property of their respective
+                        owners.</span>
+                    <span><br>All rights reserved.</span>
+                </div>
 
+                <span id="maker"><br>Made by : <i class="fa fa-github" style="font-size:20px"></i> <a
+                        href="https://github.com/2gblue/" target="_blank">2gblue</a></span>
+            </div>
         </footer>
     </div>
+
+
+
     <script src="functionalScripts.js"></script>
     <script src="namingFunctions.js"></script>
+
 </body>
 </body>
 
