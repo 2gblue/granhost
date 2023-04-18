@@ -4,7 +4,7 @@ GranHost is a web based tool for generating Co-Op room names in Japanese for jap
 
 ## Installation
 
-nil
+GUI is hosted at : https://2gblue.github.io/index
 
 ## Usage
 
