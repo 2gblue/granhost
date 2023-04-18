@@ -374,6 +374,11 @@ function updateOutputTextFieldWithRobinHood() {
   outputTextField.value += "ロビンフッド";
 }
 
+function updateOutputTextFieldWithNighthound() {
+  var outputTextField = document.getElementById("outputTextField");
+  outputTextField.value += "ハウンドドッグ";
+}
+
 function updateOutputTextFieldWithRelicBuster() {
   var outputTextField = document.getElementById("outputTextField");
   outputTextField.value += "レリバ";
@@ -455,6 +460,7 @@ var elementIds = [
   { id: "berserker", handler: updateOutputTextFieldWithBerserker },
   { id: "luchador", handler: updateOutputTextFieldWithLuchador },
   { id: "robinhood", handler: updateOutputTextFieldWithRobinHood },
+  { id: "nighthound", handler: updateOutputTextFieldWithNighthound },
   { id: "relicbuster", handler: updateOutputTextFieldWithRelicBuster },
   { id: "yamato", handler: updateOutputTextFieldWithYamato },
   { id: "viking", handler: updateOutputTextFieldWithViking },
