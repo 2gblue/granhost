@@ -465,7 +465,7 @@ var elementIds = [
   { id: "yamato", handler: updateOutputTextFieldWithYamato },
   { id: "viking", handler: updateOutputTextFieldWithViking },
   { id: "paladin", handler: updateOutputTextFieldWithPaladin },
-  { id: "iatromantis", handler: updateOutputTextFieldWithIatromantis },
+  { id: "iatro", handler: updateOutputTextFieldWithIatromantis },
   { id: "manadiver", handler: updateOutputTextFieldWithManadiver },
   { id: "kengo", handler: updateOutputTextFieldWithKengo },
   { id: "risingforce", handler: updateOutputTextFieldWithRisingForce },
